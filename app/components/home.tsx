@@ -15,6 +15,7 @@ import styles from "./home.module.scss";
 
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
+import ShopIcon from "../icons/shop.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 
 import BotIcon from "../icons/bot.svg";
@@ -28,7 +29,7 @@ import Locale from "../locales";
 import { Chat } from "./chat";
 
 import dynamic from "next/dynamic";
-import { REPO_URL } from "../constant";
+import { REPO_URL, SHOP_URL } from "../constant";
 import { ErrorBoundary } from "./error";
 import { useDebounce } from "use-debounce";
 
@@ -214,8 +215,8 @@ function _Home() {
               />
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank">
-                <IconButton icon={<GithubIcon />} shadow />
+              <a href={SHOP_URL} target="_blank">
+                <IconButton icon={<ShopIcon />} shadow />
               </a>
             </div>
           </div>

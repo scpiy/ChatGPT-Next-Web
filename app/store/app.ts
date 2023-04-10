@@ -72,22 +72,22 @@ export const ROLES: Message["role"][] = ["system", "user", "assistant"];
 const ENABLE_GPT4 = true;
 
 export const ALL_MODELS = [
-  {
-    name: "gpt-4",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-0314",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-32k",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-32k-0314",
-    available: ENABLE_GPT4,
-  },
+  // {
+  //   name: "gpt-4",
+  //   available: ENABLE_GPT4,
+  // },
+  // {
+  //   name: "gpt-4-0314",
+  //   available: ENABLE_GPT4,
+  // },
+  // {
+  //   name: "gpt-4-32k",
+  //   available: ENABLE_GPT4,
+  // },
+  // {
+  //   name: "gpt-4-32k-0314",
+  //   available: ENABLE_GPT4,
+  // },
   {
     name: "gpt-3.5-turbo",
     available: true,
@@ -136,12 +136,12 @@ const DEFAULT_CONFIG: ChatConfig = {
   historyMessageCount: 4,
   compressMessageLengthThreshold: 1000,
   sendBotMessages: true as boolean,
-  submitKey: SubmitKey.CtrlEnter as SubmitKey,
+  submitKey: SubmitKey.Enter as SubmitKey,
   avatar: "1f603",
   fontSize: 14,
   theme: Theme.Auto as Theme,
-  tightBorder: false,
-  sendPreviewBubble: true,
+  tightBorder: true,
+  sendPreviewBubble: false,
   sidebarWidth: 300,
 
   disablePromptHint: false,
@@ -149,7 +149,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   modelConfig: {
     model: "gpt-3.5-turbo",
     temperature: 1,
-    max_tokens: 2000,
+    max_tokens: 1000,
     presence_penalty: 0,
   },
 };
